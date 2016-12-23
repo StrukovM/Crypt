@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="DsRSA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RSADS/out/artifacts/DsRSA/DsRSA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
