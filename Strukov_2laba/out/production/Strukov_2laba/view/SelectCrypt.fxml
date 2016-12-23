@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <SplitPane dividerPositions="0.25787965616045844" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <TableView fx:id="cryptTable" layoutX="-28.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                    <columns>
+                      <TableColumn fx:id="cryptColumn" prefWidth="75.0" sortable="false" text="Алгоритм шифрования" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="outLabel" layoutX="30.0" layoutY="342.0" text="Вывод" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="outTextField" layoutX="159.0" layoutY="326.0" prefHeight="25.0" prefWidth="289.0" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="150.0" />
+                  <GridPane layoutX="50.0" layoutY="57.0" prefHeight="140.0" prefWidth="452.0" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="57.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="192.0" minWidth="10.0" prefWidth="136.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="249.0" minWidth="10.0" prefWidth="249.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="keyLabel" text="Введите ключ" visible="false" />
+                        <Label fx:id="lenKeyLabel" text="Введите размер ключа" visible="false" GridPane.rowIndex="1" />
+                        <Label fx:id="Label1" text="Label" visible="false" GridPane.rowIndex="2" />
+                        <Label fx:id="Label2" text="Label" visible="false" GridPane.rowIndex="3" />
+                        <Label fx:id="Label3" text="Label" visible="false" GridPane.rowIndex="4" />
+                        <TextField fx:id="keyTextField" prefHeight="33.0" prefWidth="298.0" visible="false" GridPane.columnIndex="1" />
+                        <TextField fx:id="lenKeyTextField" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <TextField fx:id="TextField1" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <TextField fx:id="TextField2" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <TextField fx:id="TextField3" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                     </children>
+                  </GridPane>
+                  <ButtonBar layoutX="253.0" layoutY="344.0" prefHeight="40.0" prefWidth="200.0" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                    <buttons>
+                      <Button fx:id="okButton" mnemonicParsing="false" onAction="#handleOK" text="OK" />
+                        <Button mnemonicParsing="false" onAction="#handleCancel" text="Cancel" />
+                    </buttons>
+                  </ButtonBar>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

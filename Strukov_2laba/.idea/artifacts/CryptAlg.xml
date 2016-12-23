@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CryptAlg">
+    <output-path>$PROJECT_DIR$/out/artifacts/CryptAlg</output-path>
+    <root id="archive" name="CryptAlg.jar">
+      <element id="module-output" name="Strukov_2laba" />
+      <element id="library" level="project" name="CryptAlg" />
+    </root>
+  </artifact>
+</component>

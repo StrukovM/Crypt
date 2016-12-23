@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="CryptAlg">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../CryptAlg/out/artifacts/CryptAlg/CryptAlg.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
