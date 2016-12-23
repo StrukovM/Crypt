@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RC5">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RonsCode5/out/artifacts/RC5/RC5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
