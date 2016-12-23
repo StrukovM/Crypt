@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="RSA">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../RivestSA/out/artifacts/RSA/RSA.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
