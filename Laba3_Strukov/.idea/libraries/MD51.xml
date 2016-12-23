@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="MD51">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../MessageDigest5/out/artifacts/MD5/MD5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
